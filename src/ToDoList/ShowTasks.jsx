@@ -4,9 +4,12 @@ import 'semantic-ui-css/semantic.min.css';
 
 const ShowTasks = (props) => {
     const { taskList, handleDeleteTask, handleCompleteTask } = props;
-
+    if (taskList.length === 0) {
+        return ('')
+    }
     return (
-        <>
+        <div className="section"
+        >
             <h3>Pending Tasks</h3>
             {taskList.map((task, index) => {
                 return (
@@ -46,8 +49,7 @@ const ShowTasks = (props) => {
                     </div>)
             })}
 
-            <div className="ui divider"></div>
-        </>
+        </div>
     );
 }
 

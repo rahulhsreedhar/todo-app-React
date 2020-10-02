@@ -42,7 +42,8 @@ const AddNewTask = (props) => {
         setShowAddTask(!showAddTask);
     }
     return (
-        <div>
+        <div className="section"
+        >
             <Dialog
                 open={popupOpen}
                 onClose={() => setPopupOpen(false)}
@@ -50,7 +51,7 @@ const AddNewTask = (props) => {
                 maxWidth="xs"
                 fullWidth
             >
-                <div className='popup-header'>Please add task details...</div>
+                <div className='popup-header'>Please add task details</div>
                 <textarea
                     onChange={(event) => { setDetails(event.target.value) }}
                     value={details}
@@ -62,17 +63,17 @@ const AddNewTask = (props) => {
                 </DialogActions>
             </Dialog>
             <button
-                className={showAddTask ? "ui red button small" : "ui teal button small"}
+                className={showAddTask ? "ui red button big" : "ui teal button big"}
                 onClick={handleAddTask}
             >
                 {
                     showAddTask ? "cancel" : "Add Task"}</button>
-            <br />            <br />
+
 
 
             {
                 showAddTask
-                    ? <div>
+                    ? <div className="enter-task">
                         <input
                             type="text"
                             className="task-input"
@@ -98,11 +99,11 @@ const AddNewTask = (props) => {
                             onChange={(event) => setDate(event.target.value)}
 
                         ></input>
-                      <input
-								type="time"
-								className='task-date'
-								onChange={(event) => setTime(event.target.value)}
-							/>
+                        <input
+                            type="time"
+                            className='task-date'
+                            onChange={(event) => setTime(event.target.value)}
+                        />
 
                         <button
                             className="ui blue button small"
@@ -119,7 +120,6 @@ const AddNewTask = (props) => {
             }
 
 
-            <div className="ui divider"></div>
 
 
         </div >
