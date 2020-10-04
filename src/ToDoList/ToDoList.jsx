@@ -47,7 +47,7 @@ const ToDoList = () => {
 	return (
 		<div className='main-body'>
 			<div className="main-content">
-				<h2 className="center-text">	To Do List  </h2>
+				<h1 className="center-text">	To Do List  </h1>
 				<AddNewTask handleAddNewTask={handleAddNewTask} />
 				<ShowTasks
 					taskList={taskList}
