@@ -39,7 +39,8 @@ body {
     height: 2.4em;
     padding: 0.5em;
     margin-right: 1%;
-    width: 35%
+    width: 35%;
+    color: white;
 }
 
 .priority-dropdown {
@@ -48,11 +49,12 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
     height: 2.4em;
     margin-right: 1%;
-    width: 10%
+    width: 10%;
+    color: white;
 }
 
 .priority-dropdown>option {
-    background-color: gray;
+    background-color: rgb(56, 55, 55);
 }
 
 .task-date {
@@ -61,7 +63,8 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
     height: 2.4em;
     margin-right: 1%;
-    width: 15%
+    width: 15%;
+    color: white;
 }
 
 .popup-header {
